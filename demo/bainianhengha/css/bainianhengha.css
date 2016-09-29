@@ -1,0 +1,317 @@
+.body{
+    width:1200px;
+    margin:0px auto;
+    border:0px auto;
+}
+.heard{
+    width:1200px;
+    height:150px;
+    margin:0px auto;
+} 
+.logo{
+    width:380px;
+    height:150px;
+    float:left;
+    line-height: 150px;
+}
+.mav{
+    margin:0px;
+    padding:0px;
+    width:820px;
+    height:150px;
+    display: inline-block;
+    line-height: 150px;  
+}
+.mav span{
+    margin-left:26px;
+}
+.mav a{
+    color:#000;
+}
+.mav a:hover{
+    color:#c7a785;
+}
+.title{
+    margin:0px auto;
+    width:1200px;
+    height:376px;
+    background:url(../image/title.jpg)no-repeat;
+    color:#fff; 
+}
+.type{
+    letter-spacing:15px; 
+    width:849px;
+    height:127px;
+    font-size:37px;
+     position:relative;
+}
+.content{
+    height:74px;
+    width:802px;
+    letter-spacing:1px; 
+}
+.end{
+    height:169px;
+    width:572px;
+    letter-spacing:1px; 
+}
+.end span{
+    color:#c7a785;
+}
+.end span:hover{
+    color:red;
+}
+.team-spirit{
+    height:22px;
+    margin:0px auto;
+    font-size:22px;
+    width:1200px;
+    margin-top:28px;
+    margin-bottom:10px;
+}
+.boor{
+    height:2px;
+    width:25px;
+     background:#fbb861;
+     /*text-align: center;*/
+     margin:0px auto;   
+}
+.team{
+    margin:0px auto;
+    font-size:14px;
+    width:1200px;
+    margin-top:7px;
+    margin-bottom:10px;
+}
+.photo{
+    margin-top:33px;
+    margin-left:20px;
+    margin:0px auto;
+    text-align:center;
+    width:1200px;
+    height:164px;
+}
+/*真诚，理解，合作，进取 */
+.manual{ 
+    width:1200px;
+    height:68px;
+    margin:0px auto;
+    color:#979797;
+}
+.manual1{
+    width:210px;
+    height:38px;
+    float:left;
+    font-size:15px;
+    text-align: center;
+    margin-left:80px;
+    margin-top:30px;
+}
+.manual2{
+   width:210px;
+    height:38px;
+    float:left;
+    font-size:15px;
+    text-align: center;
+    margin-left:70px;
+    margin-top:30px;
+}
+.manual3{
+    width:210px;
+    height:38px;
+    float:left;
+    font-size:15px;
+    text-align: center;
+    margin-left:70px;
+    margin-top:30px;
+}
+.manual4{
+    width:210px;
+    height:38px;
+    float:left;
+    font-size:15px;
+    text-align: center;
+    margin-left:70px;
+    margin-top:30px;
+}
+.bottom{
+    background:url(../image/jianjie.jpg)no-repeat;
+    width:1200px;
+    height:418px;
+    margin:0px auto;
+    margin-top:22px;
+    color:#fff;
+    position:relative;
+}
+.enterprise{
+    width:1200px;
+    height:260px;
+    margin:0px auto;
+    margin-top:30px;
+}
+.picture{
+    margin-left:153px;
+    float:left;
+}
+.about{
+    float:left;
+    margin-left:13px;
+    width:196px;
+    height:260px;
+}
+.picture-r{
+    margin-left:44px;
+    float:left;
+}
+.about-r{
+    width:196px;
+    height:260px;
+    float:left;
+    margin-left:13px;
+}
+.about li{
+    color:#636363;
+}
+.about-r li{
+    color:#636363; 
+}
+.about li:hover{
+    color:red;
+}
+.about-r li:hover{
+    color:red;
+}
+.development{
+    width:1200px;
+    height:454px;
+    margin:0px auto;
+    margin-top:166px;               
+}
+.banner{
+    width:1200px;
+    height:310px;
+    margin:0px auto;
+    margin-top:74px;
+    position: relative;
+}
+.banner-logo{
+    position: absolute;
+    margin-left:265px;
+    margin-top:74px;
+}
+.oration{
+    position: absolute;
+    margin-left:248px;
+    margin-top:172px;
+    font-size:20px;
+}
+.explain{
+    position: absolute;
+    margin-left:248px;
+    margin-top:207px;
+    width:422px;
+    height:142px;
+    text-indent:2em;
+}
+.banner-photo{
+    margin-top:80px;
+    margin-left:693px;
+}    
+.honor{
+    width:1200px;
+    height:514px;
+    margin:0px auto;
+}
+.footer{
+    width:1200px;
+    height:165px;
+    margin:0px auto;
+    margin-top:32px;
+}
+.contact-details{
+    width:360px;
+    height:155px;
+    margin-left:235px; 
+    float:left;
+}
+.name{
+    font-size:18px;
+     letter-spacing:2px;  
+}
+.tel{
+    margin-top:19px;
+    font-size:14px;
+    color:#9d9d9d; 
+    letter-spacing:1px;   
+}
+.tel-l{
+    display: inline-block;
+    position: relative;
+}
+.tel-r{
+   display: inline-block;
+   margin-left:10px;
+   position: absolute;
+   margin-top:-2px;
+}
+.e-mail-l{
+    display: inline-block;
+    position: relative;
+}
+.e-mail-r{
+   display: inline-block;
+    letter-spacing:1px;   
+   margin-left:10px;
+   position: absolute;
+   margin-top:-2px;
+}
+.addres-l{
+    display: inline-block;
+    position: relative;
+}
+.addres-r{
+   display: inline-block;
+   margin-left:10px;
+   position: absolute;
+   margin-top:-2px;
+}
+.e-mail{
+    margin-top:16px;
+    font-size:14px;
+    color:#9d9d9d;
+}
+.addres{
+    margin-top:16px;
+    font-size:14px;
+    color:#9d9d9d;
+}
+.service{
+    width:158px;
+    height:142px;
+    clear:both;
+    float:left;
+}
+.copyright{
+    width:1200px;
+    height:93px;
+    background:#333333;
+    margin:0px auto;
+    color:#fff;
+    clear:both;
+}
+.partner{
+    margin-top:35px;
+    text-align: center;
+    border:1px solid red;
+}
+.joinus{
+    text-align:center;
+    color:#fff;
+    margin-top:15px;
+}
+.link a{
+    color:#fff;
+}
+.link a:hover{
+    color:#c7a785;
+}

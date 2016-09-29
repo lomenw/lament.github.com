@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+
+         <link rel="stylesheet" type="text/css" href="css/base.css" >
+         <link rel="stylesheet" type="text/css" href="css/xindongfang.css" >
+        <script src="plugin/silder/js/jquery.min.js"></script>
+         <script type="text/javascript" src="plugin/menu/js/jquery-1.6.4.min.js"></script>
+         <script type="text/javascript" src="plugin/menu/js/DD_belatedPNG.js"></script>
+         
+         <style type="text/css">
+                html,body{margin:0;padding:0;}
+                .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+                .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+        </style>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+        <style type="text/css">
+                *{ margin:0; padding:0; list-style:none;}
+                img{ border:0;}
+                .ban{ width:672px; height:225px; position:relative; overflow:hidden;}
+                .ban2{ width:672px; height:225px; position:relative; overflow:hidden;}
+                .ban2 ul{ position:absolute; left:0; top:0;}
+                .ban2 ul li{ width:672px; height:225px;}
+                .prev{ float:left; cursor:pointer;}
+                .num{ height:82px;overflow:hidden; width:430px; position:relative;float:left;}
+                .min_pic{ padding-top:10px; width:500px;}
+                .num ul{ position:absolute; left:0; top:0;}
+                .num ul li{ width:80px; height:80px; margin-right:5px; padding:1px;}
+                .num ul li.on{ border:1px solid red; padding:0;}
+                .prev_btn1{ width:16px; text-align:center; height:18px; margin-top:40px; margin-right:20px; cursor:pointer; float:left;}
+                .next_btn1{  width:16px; text-align:center; height:18px; margin-top:40px;cursor:pointer;float:right;}
+                .prev1{ position:absolute; top:100px; left:20px; width:28px; height:51px;z-index:9;cursor:pointer;}
+                .next1{ position:absolute; top:100px; right:20px; width:28px; height:51px;z-index:9;cursor:pointer;}
+      </style>
+      <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu li').hover(function(){
+                    $(this).children('ul').show();
+                    $(this).focus().addClass('focusa')
+                },function(){
+                
+                $(this).children('ul').hide();
+
+                $(this).focus().removeClass('focusa')	
+                    });	
+                DD_belatedPNG.fix('ul,.more');
+            });
+        </script>
+        <style type="text/css">
+            .menu { height:59px; line-height:59px; background:#faf8f8; }
+            .menu li { float:left; position:relative; }
+            .menu li a:hover { color:#000; background:#faf8f8;  }
+            .menu li.focusa { background:#faf8f8; }
+            .menu li a { display:block; float:left; height:59px; line-height:59px; padding:0 20px; }
+            .menu li ul { position:absolute; left:0; background:#faf8f8; width:75px;border-top:-5px;border-top:5px solid #3c9cd3; display:none; }
+            .menu li ul a { width:110px; }
+            .one { border:1px solid #fff; top:59px; }
+            .one li a:hover { background:#faf8f8; }
+            .menu li ul.two { left:150px; }
+            .one li a.more { background:#faf8f8; }
+            .one li a.more:hover { background:#faf8f8; }
+            .menu li ul.hdw { left:150px; }
+            .menu li ul.hdwq { left:150px; }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+             <div class="regsiter"><span><a href="#"> 注册学籍</a></span> | <span><a href="#"> 手机网站</a></span></div>        
+       </div>
+       <div class="logo">
+            <img src="image/dglogo.png" style="margin-left:330px; margin-top:5.5px;float:left;" alt="">
+            <div class="nav">
+                <ul class="menu">
+                        <li><a href="#">新闻</a>
+                            <ul class="one">
+                                <li><a href="#">国内新闻</a></li>
+                                <li><a href="#">国际新闻</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">关于我们</a>
+                             <ul class="one">
+                                <li><a href="#">学校风采</a></li>
+                                <li><a href="#">学生风采</a></li>
+                            </ul>
+                        </li>
+                      <li>
+                             <a href="#">联系我们</a>
+                             <ul class="one">
+                                <li><a href="#">电话</a></li>
+                                <li><a href="#">QQ/微信</a></li>
+                            </ul>
+                    </li>
+                      <li><a href="#">在线报名</a>
+                             <ul class="one">
+                                <li><a href="#">网线报名</a></li>
+                                <li><a href="#">学校报名</a></li>
+                            </ul>
+                           
+                      </li>
+                </ul>
+            </div>  
+        </div>
+        <!--banner图片轮播-->
+      <div class="banner">
+          <img src="../xindongfang/image/title.png"/>
+      </div>
+       <!--职业分类-->
+      <div class="guild">
+          <div class="hot-l" >
+                <div class="technique"><img src="image/tv.png" alt=""></div>  
+                <div class="new-technique">最热门的技术</div>
+                <div class="depict">
+                    <div class="depict-t">最热门的技术<br/>最适合年轻人的职业</div>
+                </div>
+          </div>
+          <div class="hot-m" >
+                <div class="technique"><img src="image/tv.png" alt=""></div>  
+                <div class="new-technique">最热大的学校</div>
+                <div class="depict">
+                    <div class="depict-t">最大的烹饪学校<br/>教学资源最丰富</div>
+                </div>
+          </div>
+          <div class="hot-r" >
+                <div class="technique"><img src="image/tv.png" alt=""></div>  
+                <div class="new-technique">最好的就业</div>
+                <div class="depict">
+                    <div class="depict-t">毕业推荐工作<br/>新东方靴子就业无忧</div>
+                </div>
+          </div>
+      </div>
+
+      <div class="consultation"><img src="" alt=""></div>
+      <!--初高中生路在何方-->  
+      <div class="preface">
+          <div class="headine"><div style="margin-top:37px;">初高中生路在何方</div></div>
+          <div class="line"> 
+               <div class="line-l"></div>
+               <div class="line-b">The road</div>
+               <div class="line-r"></div>
+          </div>
+          <div class="text">
+              <div class="text-l">
+                    <div style="margin-bottom:22px;text-align:center;">高校扩招，不一定能给你未来</div>
+                    <!--<img src="image/signpost.png" alt="" style="float:right;">-->
+                     <p style="text-indent:2em;">中国高校教育这些年出现的问题，可以归于各高校  疯狂扩招的结果，同时也是教育体制的问题，
+                       学历只是敲门砖，并不需学以致用。</p>
+                      <p style="text-indent:2em;"> 现在社会一切以效益、解决问题为根本，靠能力说话，并不以学历为依旧，学历就变得无足
+                       轻重，高校却还在通过同一种教育模式来培养，使培养的学生很难满足社会的需求。</p>
+                       <p style="text-indent:2em;width:340px;"> 社会在乎能力不在乎学历的游戏规则，不可避免把高校与其他人等同起来进行考核，如此以来，
+                       又促使大学学历进一步贬值，在同等条件下，有能力的人更受社会的青睐。
+                     </p>
+           </div>
+           <div class="text-b">
+                <img src="image/signpost.png" alt="">  
+           </div>
+           <div class="text-r">
+                  <div style="margin-bottom:22px;text-align:center;">热门技术，成就好未来</div>
+                 <p style="text-indent:2em;">随着餐饮业近年来的快速发展，厨师这个行业越来越受到许多人的重视。拥有一门技术，尤其是像
+                  厨师一样的技术，成了许多人的目标。</p>
+                 <p style="text-indent:2em;"> 现今，用人单位更加看重个人能力，大学学历贬值的同时，拥有一门热门的技术，成为个人成就事业
+                  的重要基础。</p>
+                 <p style="text-indent:2em;"> 厨师，被誉为21世纪的朝阳行业，黄金职业，因其工作稳定、收入高、工作压力小成为许多人的职业
+                 选择；尤其是八大菜系之首的川菜行业，所培养的川菜厨师更受到了全国各地用人单位的欢迎。。。。
+               </p> 
+         </div>
+        </div>
+       </div> 
+        <div class="headine-study" >
+         <div class="headine-b">
+             <div style="margin-top:37px;">入学季</div>
+         </div>
+          <div class="line"> 
+               <div class="line-left"></div>
+               <div class="line-bottom">Admissions</div>
+               <div class="line-right"></div>
+          </div> 
+          </div>
+          <div class="mainnav">
+              <!--<img src="image/shop.png" alt="">-->
+              <div class="msg">
+              <p style="text-indent:2em;">每一年，从全国各地来到成都新东方烹饪学校报名的学子人数众多，学生们选择成都新东方的
+                  原因是因为在这里能够学到更多技术，就业待遇更好，成都新东方烹饪学校作为全国最大的烹饪学校，得到了社会各界的广泛肯定...
+              </p>
+              <p style="text-indent:2em;">
+                  如今，成都新东方烹饪学校与全国各地众多用人单位签订了用人合作协议，每年根据用人单位的用人需求限额招生，为社会培养高
+                  技能人才。还在为选择学校犹豫的同学们，你还在犹豫什么呢？在成都新东方烹饪学校，你能得到最好的发展，别等了，再不报名就晚了。
+              </p>
+           </div>  
+           <div class="picture">
+               <img src="image/girl.png" alt="">
+               <img src="image/prospect.png" alt="">
+               <img src="image/woman.png" alt=""> 
+           </div>
+           <div style="width:1200px;margin-top:10px;text-align: center;">学姐在这里等你 </div>
+          </div>
+          <div class="superiority">
+              <div class="headine"><div style="margin-top:37px;">现在入学，赢在起跑线</div></div>
+              <div class="line"> 
+                   <div class="line-l"></div>
+                   <div class="line-b">Admissions</div>
+                   <div class="line-r"></div>
+              </div>
+              <div class="list">
+                    <div class="sort">优势一</div>
+                    <div class="Strengths">现在报读学校各专业，可获得政府补贴【详情咨询】</div>  
+                    <div class="sort">优势二</div>
+                    <div class="Strengths">成绩优异的同学，可获得奖学金【详情咨询】</div>
+                    <div class="sort">优势三</div>
+                    <div class="Strengths">入学即就业，签订就业协议【详情咨询】</div> 
+              </div>
+              <div class="cook"><img src="image/Cook.png" alt=""></div>
+          </div>
+          <div class="cook-a">
+               <div class="headine"><div style="margin-top:37px;">早一日报名，早一日成功</div></div>
+               <div class="line"> 
+                   <div class="line-l"></div>
+                   <div class="line-b">Admissions</div>
+                   <div class="line-r"></div>
+            </div>
+                   <div class="note">
+                       <p style="text-indent:2em; ">成都新东方烹饪学校坐落在四川省成都市，环境优美，交通便利，现拥有彭镇、较龙巷、龙泉、金牛四大校区，规模全国第一。学校师资力量雄厚，拥有一支以素质高，
+                           技术强，教学精而著称的川菜高级烹饪调师，高级技师为骨干的专业教师团队，教学质量始终如一，名列全国前茅。学校教学设施先进，现有实训大厅386间、理实一
+                           体化实训室156间，理论教室85间，高级餐厅实训中心98间，电子阅览室、投影教室、调酒教室、西点教室、西餐教室等完善的基础硬件设施，增添了大型不锈钢炉
+                           灶具、切配台等一流的教学设施设备。随着国内、国际旅游餐饮业的繁荣，学校将加大资金投放、创新办学，使我们的硬件设施引领市场，不断提高教学质量，为社会
+                           培养更多的复合型厨师人才【详情】
+                       </p>
+                   </div>
+            <div class="equipment"><span style="margin-left:3px;">现代化教学设备</span></div>
+             <div class="group"><img src="image/group.png" alt=""> </div>
+             <div class="basis-left">
+                 <div class="equipmentb"><span style="margin-left:3px;">零基础入学</span></div>
+                 <div style="border-bottom:3px solid #95908e;width:174px;"></div>
+                 <p style="padding-top:30px;width:320px;">在成都新东方烹饪学校入学的新生中，90%的学生都没有任何基础通过在成都新东方烹饪学校每天的实战实训演练，学生们
+                     都能在短时间内掌握基本技能，为自己在以后的学习生活中打下良好的基础。</p>
+                     <div  class="presen" ><span > <a href="#"> 咨询|HOME</span></a></div>
+             </div>
+              <div class="basis-right">
+                  <img src="image/make.png" alt="">
+              </div>
+
+              <div class="basis-left-cooker">
+                 <div class="equipmentb"><span style="margin-left:3px;">好学校 让学生学得更多</span></div>
+                 <div style="border-bottom:3px solid #95908e;width:174px;"></div>
+                 <p style="padding-top:30px;width:320px;">一个月，三个月，半年，一年，两年，不同时间掌握不同的知识技能
+                     ，新东方学子能够在每一阶段看到自己的显著变化；一至两年的技能训练，让新东方学生们能在毕业前掌握足够的技能。
+                     因为技能扎实，素质高，新东方学子一直是用人单位的首选。 
+                 </p>
+                     <div  class="presen" ><span > <a href="#"> 咨询|HOME</span></a></div>
+             </div>
+              <div class="basis-right-cooker">
+                  <img src="image/cooker.png" alt="">
+              </div>
+            <!--厨艺展示-->
+            <div class="sor">
+                <div class="hand-a"><span style="color:#000;font-size:18px;"><a href="#"> 大师亲手教</a></span></div>
+                <div class="hand-b"><span style="color:#000;font-size:18px;"><a href="#">老师点评</a></span></div>
+                <div class="hand-c"><span style="color:#000;font-size:18px;"><a href="#">领悟再练习</a></span></div>
+                <div class="hand-d"><span style="color:#000;font-size:18px;"><a href="#">阶段性考核</a></span></div>
+            </div>
+             <div class="table">
+                 <div class="tablea">大师手把手指导，让你学的会，学的更专业</div>
+                 <div class="tableb">老师做点评，学生做总结不断提升自己！</div>
+                  <div class="tablec">名师耐心演示<br/>学生实操学习</div>
+                  <div class="tabled">阶段性考核；确保学生在每个阶段都已学会！</div>
+             </div>
+          </div>
+          <!--全球50000强等您来就业-->
+          <div class="business"> 
+               <div class="headine"><div style="margin-top:37px;">全球50000家企业，等你来就业</div></div>
+                    <div class="line"> 
+                         <div class="line-l"></div>
+                         <div class="line-b">Admissions</div>
+                         <div class="line-r"></div>
+                   </div>
+            </div>
+            <div class="partner">
+                <div class="hotel">
+                     <p style="text-indent:2em;">成都新东方烹饪学校拥有优质的合作单位，保证了学生的就业。目前和50000家左右的优质就业合作，
+                   其中包括诸如成都温德姆至尊豪庭酒店、成都洲际酒店、大蓉和酒店、华彬费尔蒙酒店、成都香格里拉大酒店、红杏酒家等中式酒店，
+                   还有如Radisson、westin、sheraton等西式著名的酒店。</p>
+                 </div>
+                 <div class="cursor">
+                      <!--<div class="left-cursor"><img src="image/jiantou.png" alt="" style="margin-top:8px;margin-left:2px;"></div>-->
+                      <div class="hotel-photo">  
+                  <div class="ban" id="demo1">
+	                      <div class="ban2" id="ban_pic1">
+                                <div class="prev1" id="prev1"><img src="plugin/silder/images/index_tab_l.png" width="28" height="51"  /></div>
+                                <div class="next1" id="next1">	<img src="plugin/silder/images/index_tab_r.png" width="28" height="51"  />	</div>
+                         <ul>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b1.jpg" width="672" height="225" /></a></li>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b2.jpg" width="672" height="225" /></a></li>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b3.jpg" width="672" height="225" /></a></li>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b4.jpg" width="672" height="225" /></a></li>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b5.jpg" width="672" height="225" /></a></li>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b1.jpg" width="672" height="225" /></a></li>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b2.jpg" width="672" height="225" /></a></li>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b3.jpg" width="672" height="225" /></a></li>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b4.jpg" width="672" height="225" /></a></li>
+                            <li><a href="javascript:;"><img src="plugin/silder/images/b5.jpg" width="672" height="225" /></a></li>
+                        </ul>
+	               </div>
+               </div>
+             </div>
+                  <!--<div class="rightf"><img src="image/jiantouright.png" alt="" style="margin-top:8px;margin-left:2px;"></div>-->
+            </div>
+            </div>
+              <!--footer部分-->
+             <div class="business"> 
+               <div class="headine"><div style="margin-top:37px;margin-left:30px;">联系我们</div></div>
+                    <div class="linr"> 
+                         <div class="link-l"></div>
+                         <div class="link-b">STORE DISPLAY</div>
+                         <div class="link-r"></div>
+                   </div>
+            </div>
+            <div class="footer">
+            <div class="footer-left">
+                <div class="wechat"></div>  
+                <div class="tel"><img src="image/tel.png" alt="" style=""><span style="margin-left:10px;color:#989898;">报名热线：028-8750 6666</span></div>
+                <div class="email"><img src="image/email.png" alt="" style=""><span style="margin-left:10px;color:#989898;">公司官网：www.scxdf.com</span></div> 
+                <div class="qq"><img src="image/qq.png" alt="" style=""><span style="margin-left:10px;color:#989898;">咨询QQ:800 800 8008</span></div> 
+                <div class="dizhi"><img src="image/dizhi.png" alt="" style=""><span style="margin-left:10px;color:#989898;">报名地址：成都市金牛宾馆内</span></div> 
+                <div class="baidu">
+                    <div style="width:430px;height:196px;border:#ccc solid 1px;" id="dituContent"></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                 <span style="color:#989898;">姓名</span>
+                 <input type="" name="" value="" style="width:630px;height:34px;background:#f9f8f8;margin-top:10px;margin-bottom:10px;">
+                 <span style="color:#989898;">联系电话</span>
+                 <input type="" name="" value="" style="width:630px;height:34px;background:#f9f8f8;margin-top:10px;margin-bottom:10px;">
+                 <span style="color:#989898;">QQ</span>
+                 <input type="" name="" value="" style="width:630px;height:34px;background:#f9f8f8;margin-top:10px;margin-bottom:10px;">
+                 <span style="color:#989898;">家庭住址</span>
+                 <input type="" name="" value="" style="width:630px;height:120px;background:#f9f8f8;margin-top:10px;">
+                 <input type="button" name="button" id="button" value="提交" style="margin-top:10px;width:95px;height:30px;"/>
+        </div>
+         </div>
+      
+         <script src="plugin/silder/js/pic_tab.js"></script>
+         <script>
+        jq(function(){
+	    jq('#demo1').banqh({
+		box:"#demo1",//总框架
+		pic:"#ban_pic1",//大图框架
+		// pnum:"#ban_num1",//小图框架
+		prev_btn:"#prev_btn1",//小图左箭头
+		next_btn:"#next_btn1",//小图右箭头
+		pop_prev:"#prev2",//弹出框左箭头
+		pop_next:"#next2",//弹出框右箭头
+		prev:"#prev1",//大图左箭头
+		next:"#next1",//大图右箭头
+		// pop_div:"#demo2",//弹出框框架
+		pop_pic:"#ban_pic2",//弹出框图片框架
+		pop_xx:".pop_up_xx",//关闭弹出框按钮
+		// mhc:".mhc",//朦灰层
+		autoplay:true,//是否自动播放
+		interTime:2000,//图片自动切换间隔
+		delayTime:400,//切换一张图片时间
+		pop_delayTime:400,//弹出框切换一张图片时间
+		order:0,//当前显示的图片（从0开始）
+		picdire:true,//大图滚动方向（true为水平方向滚动）
+		mindire:true,//小图滚动方向（true为水平方向滚动）
+		min_picnum:5,//小图显示数量
+		pop_up:false//大图是否有弹出框
+	})
+})
+</script>
+    </body>
+       <script type="text/javascript" src="plugin/map/js/test_zindex.js"></script>
+</html>

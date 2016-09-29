@@ -1,0 +1,602 @@
+.header{
+    width:1200px;
+    height:24px;
+    margin:0px auto;
+    background: #efefef;
+}
+.regsiter{
+    margin-left:842px;
+    line-height: 24px;
+}
+.regsiter a{
+    color:#646464;
+}
+.regsiter a:hover{
+    color:red;
+}
+.logo{
+    width:1200px;
+    height:59px;
+    margin:0px auto;
+    background:#fff;
+}
+.nav{
+    margin-left:103px;
+    line-height:59px;
+    float:left;
+}
+.nav a{
+    line-height:59px;
+    color:#6b6b6b;
+}
+.nav a:hover{
+    color:red;
+}
+.banner{
+     width:1200px;
+     margin:0px auto;
+}
+.guild{
+    width:1200px;
+    height:230px;
+    margin:0px auto;
+    margin-top:12px;
+    position:relative;
+}
+.hot-l{
+    width:138px;
+    height:138px;
+    border:2px solid #efefef;
+    float:left;
+    margin:0px auto;
+    position: absolute;
+    margin-left:350px;
+}
+.hot-m{
+    width:138px;
+    height:138px;
+    border:2px solid #efefef;
+    float:left;
+    margin:0px auto;
+    position:absolute;
+    margin-left:532px;
+}
+.hot-r{
+    width:138px;
+    height:138px;
+    border:2px solid #efefef;
+    float:left;
+    margin:0px auto;
+    position: absolute;
+    margin-left:710px;
+}
+.technique{
+    width:138px;
+    margin:0px auto;   
+}
+.technique img{
+    margin-left:54px;
+    margin-top:20px;
+}
+.new-technique{
+    font-size:10px;
+    color:#65acb0;
+    margin-left:43px;
+}
+.depict{
+    font-size:10px;
+    color:#000;
+    width:118px;
+    height:56px;
+    border-top:1px dashed #c4c4c4;
+    margin:0px auto;
+    margin-top:10px; 
+    margin-bottom:10px;
+}
+.depict-t{
+    width:118px;
+    margin:0px auto;
+    margin-top:5px;
+    line-height:20px;
+    text-align: center;
+}
+.preface{
+    width:1200px;
+    height:306px;
+    background:#e6e8e9;
+    margin:0px auto;
+}
+.headine{
+    width:1200px;
+    height:55px;
+    font-size:15px;
+    font-family:'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial,'Lucida Grande',sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+.line-l{
+    width:48px;
+    margin-top:12px;
+    border:1px solid #000;
+    background: #000;
+    margin-left:512px;
+    float:left;
+}
+.line-b{
+   width:60px;
+   height:21px;
+   float:left;
+   margin-left:12px; 
+   text-align: center;  
+   line-height: 20px;
+}
+.line-r{
+    width:48px;
+    margin-top:12px;
+    border:1px solid #000;
+    background: #000;
+    margin-left:20px;
+    float:left;
+}
+.line{
+    width:1200px;
+    height:22px;
+}
+.text{
+    width:1200px;
+    height:225px;
+}
+.text-l{
+    width:272px;
+    height:225px;
+    float:left;
+    margin-left:239px;
+    font-size:10px;
+}
+.text-b{
+    float:left; 
+    margin-top:20px;
+}
+.text-r{
+    width:256px;
+    height:225px;
+    float:left;
+    font-size:10px;
+    margin-left:20px;  
+}
+.headine-study{
+    width:1200px;
+    height:113px;
+    margin:0px auto;
+}
+.headine-b{
+    width:1200px;
+    height:55px;
+    font-size:15px;
+    font-family:'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial,'Lucida Grande',sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+.line-left{
+    width:48px;
+    margin-top:12px;
+    border:1px solid #000;
+    background: #000;
+    margin-left:512px;
+    float:left;
+}
+.line-bottom{
+   width:60px;
+   height:21px;
+   float:left;
+   margin-left:12px; 
+   text-align: center;  
+   line-height: 20px;
+}
+.line-right{
+    width:48px;
+    margin-top:12px;
+    border:1px solid #000;
+    background: #000;
+    margin-left:20px;
+    float:left;
+}
+.line{
+    width:1200px;
+    height:22px;
+      overflow: hidden;
+}
+.mainnav{
+    width:1200px;
+    height:272px;
+    margin:0px auto;
+    background:url(../image/shop.png);
+    overflow: hidden;
+}
+.msg{
+    width:645px;
+    height:90px;
+    font-size:10px;
+    /*line-height:2;*/
+    margin-left:279px;
+    margin-top:20px;
+}
+.picture{
+    width:659px;
+    height:108px;
+    margin:0px auto;
+    margin-top:10px;
+    background:#fff;
+}
+.superiority{
+    height:302px;
+    width:1200px;
+    margin:0px auto;
+     margin-top:80px;
+    background: #e6e8e9;
+}
+.list{
+    width:230px;
+    height:156px;
+    margin-top:40px;
+    margin-left:297px;
+    font-size:10px;
+    float:left;
+    /*position: relative;*/
+}
+.sort{
+    font-size:12px;
+    color:#669900;
+}
+.Strengths{
+    width:230px;
+    /*position:absolute;*/
+    margin-bottom:20px;
+    
+}
+.cook{
+    margin-left:143px;
+    float:left;
+    margin-top:20px;
+}
+.cook-a{
+    width:1200px;
+    height:1255px;
+    background:#e6e8e9;
+    margin:0px auto;
+    margin-top:120px;   
+}
+.note{
+    width:700px;
+    height:110px;
+    margin:0px auto;
+    margin-top:15px;
+}
+.note p:hover{
+    color:green;
+}
+.equipment{
+   width:275px;
+   height:20px;
+   margin-top:36px;
+   margin-left:260px;
+   font-size:20px;
+   border-bottom:3px solid #95908e;
+   border-left:4px solid #cc9d4b;
+}
+.group{
+    height:238px;
+    margin:0px auto;
+    margin-top:20px;
+    margin-left:260px;
+}
+.equipmentb{
+   width:275px;
+   height:20px;
+   font-size:16px;
+   border-left:4px solid #cc9d4b;
+}
+.basis-left{
+    width:321px;
+    height:141px;
+    margin-top:50px;
+    margin-left:200px; 
+    font-size:10px;   
+    float:left;
+}
+.presen{
+    width:320px;
+    text-align:right;   
+}
+.presen a{
+   color:#000;
+}
+.presen a:hover{
+    color:red;
+}
+.basis-right{
+    width:371px;
+    height:200px;
+    float:right;
+    margin-top:15px;
+    margin-right:280px;
+}
+.basis-left-cooker{
+    width:321px;
+    height:141px;
+    margin-top:50px;
+    margin-right:250px; 
+    font-size:10px;   
+    float:right;
+    clear:both;
+     overflow: hidden;
+}
+.basis-right-cooker{
+    width:371px;
+    height:200px;
+    float:left;
+    margin-top:20px;
+    margin-left:200px;  
+     overflow: hidden;
+}
+.sor{   width:1200px;
+        height:180px;
+        clear:both;
+        margin-top:50px;
+        margin:0px auto;
+}
+.hand-a{
+    width:160px;
+    height:160px;
+    margin-top:10px;
+    margin-left:160px;
+    text-align: center;
+    color: #0066CC;
+    background-position:50%,50%;
+    line-height:180px;
+    border:1px solid #000000;
+    background: url(../image/sorta.png) no-repeat center;
+    float:left;
+}
+.hand-a a{
+    color:#000;
+}
+.hand-a a:hover{
+    color:blue;
+}
+.hand-b{
+    width:160px;
+    height:160px;
+    margin-top:10px;
+    margin-left:80px;
+    text-align: center;
+    color: #0066CC;
+    background-position:50%,50%;
+    line-height:180px;
+    border:1px solid #000000;
+    background: url(../image/sorb.png) no-repeat center;
+    float:left;
+}
+.hand-b a{
+    color:#000;
+}
+.hand-b a:hover{
+    color:blue;
+}
+.hand-c{
+    width:160px;
+    height:160px;
+    margin-top:10px;
+    margin-left:80px;
+    text-align: center;
+    color: #0066CC;
+    background-position:50%,50%;
+    line-height:180px;
+    border:1px solid #000000;
+    background: url(../image/sorc.png) no-repeat center;
+    float:left;
+}
+.hand-c a{
+    color:#000;
+}
+.hand-c a:hover{
+    color:blue;
+}
+.hand-d{
+    width:160px;
+    height:160px;
+    margin-top:10px;
+    margin-left:80px;
+    text-align: center;
+    color: #0066CC;
+    background-position:50%,50%;
+    line-height:180px;
+    border:1px solid #000000;
+    background: url(../image/sord.png) no-repeat center;
+    float:left;
+}
+.hand-d a{
+    color:#000;
+}
+.hand-d a:hover{
+    color:blue;
+}
+.sor img:hover{
+    background: #48443e;
+}
+.table{
+    width:1200px;
+    height:46px;
+    margin-top:20px;
+}
+.tablea{
+    text-align: center;
+    color:#fff;
+    background: #333;
+    width:160px;
+    height:46px;
+    float:left;
+    margin-left:160px;
+    margin-right:32px;
+    text-align:center; 
+}
+.tableb{
+    text-align: center;
+    color:#fff;
+    background: #333;
+    width:160px;
+    height:46px;
+    float:left;
+    margin-left:50px;
+}
+.tablec{
+    text-align: center;
+    color:#fff;
+    background: #333;
+    width:160px;
+    height:46px;
+    float:left;
+    margin-left:80px;  
+}
+.tabled{
+    text-align: center;
+    color:#fff;
+    background: #333;
+    width:160px;
+    height:46px;
+    margin-left:80px;
+    float:left;
+}
+ /*全球50000强等您来就业*/
+.business{
+    width:1200px;
+    height:133px;
+    margin:0px auto;
+}
+.partner{
+    width:1200px;
+    height:373px;
+    background:url(../image/beijing.png);
+    margin:0px auto;
+     overflow: hidden;
+}
+.hotel{
+    width:707px;
+    height:52px;
+    margin:0px auto;
+    margin-top:20px;
+}
+.cursor{
+    width:800px;
+    height:225px;
+    margin:0px auto;
+    margin-top:20px;
+}
+
+.left-cursor{
+    width:30px;
+    height:48px;
+    background:#fff;
+    margin-left:20px;
+    margin-top:78px;
+    clear:both;
+    float:left;
+     position: relative;
+}
+.hotel-photo{
+     width:672px;
+     height:225px;
+     border:1px solid red;
+     margin-left:20px;
+     float:left;
+    
+}
+.rightf{
+    width:30px;
+    height:48px;
+    background:#fff;
+    position: absolute;
+    margin-left:770px;  
+     margin-top:78px;
+}
+.link-l{
+    width:50px;
+    margin-top:12px;
+    border:1px solid #c9c9c9;
+    background: #c9c9c9;
+    margin-left:512px;
+    float:left;
+}
+.link-b{
+   width:80px;
+   height:21px;
+   float:left;
+   margin-left:12px; 
+   text-align: center;  
+   line-height: 20px;
+   font-size:10px;
+   color:#c9c9c9;
+}
+.link-r{
+    width:50px;
+    margin-top:12px;
+    border:1px solid #c9c9c9;
+    background: #c9c9c9;
+    margin-left:20px;
+    float:left;
+}
+.headine{
+    width:1200px;
+    height:55px;
+    font-size:15px;
+    font-family:'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial,'Lucida Grande',sans-serif;
+    text-align: center;
+    overflow: hidden;  
+}
+/*footer部分*/
+.footer{
+    width:1200px;
+    height:420px;
+    margin:0px auto;
+}
+.footer-left{
+    width:430px;
+    height:425px;
+    margin-left:70px;
+    float:left;
+}
+.wechat{
+    width:142px;
+    height:187px;
+    border:1px solid red;
+    float:left;
+}
+.tel{
+    float:left;
+    margin-left:26px;
+}
+.email{
+    float:left;
+    margin-left:26px;
+    margin-top:30px;
+}
+.qq{
+    float:left;
+    margin-left:26px;
+    margin-top:30px;
+}
+.dizhi{
+    float:left;
+    margin-left:26px;
+    margin-top:30px;
+}
+.footer-right{
+    width:630px;
+    height:425px;
+  
+    float:left;
+    margin-left:40px;
+}
+.baidu{
+    margin-top:20px;
+}

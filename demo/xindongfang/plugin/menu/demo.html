@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery多级下拉菜单导航</title>
+<meta name="keywords" content="水平导航,下拉导航,jquery导航" />
+<meta name="description" content="具体效果请看演示，一流资源网推荐下载。" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+  		$('.menu li').hover(function(){
+    		$(this).children('ul').show();
+    		$(this).focus().addClass('focusa')
+		},function(){
+		
+		  $(this).children('ul').hide();
+
+  		$(this).focus().removeClass('focusa')	
+  			});	
+		  DD_belatedPNG.fix('ul,.more');
+		});
+</script>
+<style type="text/css">
+* { padding:0; margin:0; }
+
+body { font-size:12px; background:#000; min-height: 500px;}
+
+ul { list-style-type:none; }
+
+a { color:#fff; text-decoration:none; }
+
+.container { width:1024px; height:100px; margin:0 auto; padding-top:100px; }
+
+.menu { height:30px; line-height:30px; background:url(img/bg1.png) repeat-x; }
+
+.menu li { float:left; position:relative; }
+
+.menu li a:hover { color:#000; background:url(img/bg1.png);  }
+
+.menu li.focusa { background:url(img/bg_focus.png); }
+
+.menu li a { display:block; float:left; height:30px; line-height:30px; padding:0 20px; }
+
+.menu li ul { position:absolute; left:0; background:url(img/bg2.png); width:150px; border:1px solid #000; display:none; }
+
+.menu li ul a { width:110px; }
+
+.one { border:1px solid #000; top:30px; }
+
+.one li a:hover { background:url(img/bg1.png); }
+
+.menu li ul.two { left:150px; }
+
+.one li a.more { background:url(img/there.png) no-repeat 130px center; }
+
+.one li a.more:hover { background:url(img/there.png) no-repeat 130px center; }
+
+.menu li ul.hdw { left:150px; }
+
+
+.menu li ul.hdwq { left:150px; }
+
+
+</style>
+</head>
+
+<body>
+<div class="container">
+  <ul class="menu">
+    <li><a href="#">新闻</a>
+      <ul class="one">
+        <li><a href="#">国际新闻</a></li>
+        <li><a href="#">国内新闻</a></li>
+        <li><a href="#">最新趋势</a></li>
+        <li><a href="#" class="more">大事记</a>
+          <ul class="two">
+            <li><a href="#">小王报道</a></li>
+            <li><a href="#">哈哈</a></li>
+            <li><a href="#">随笔</a></li>
+            <li><a href="#">随笔</a></li>
+            <li><a href="#" class="more">随笔</a>
+              <ul class="hdw">
+                <li><a href="#">是的</a></li>
+                <li><a href="#">随笔</a></li>
+                <li><a href="#">随笔</a></li>
+                <li><a href="#">随笔</a></li>
+                <li><a href="#"  class="more">随笔</a>
+                 <ul class="hdwq">
+                  <li><a href="#">是的</a></li>
+                  <li><a href="#">随笔</a></li>
+                  <li><a href="#">随笔</a></li>
+                  <li><a href="#">随笔</a></li>
+                  <li><a href="#">随笔</a></li>
+                  </ul> 
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">特殊新闻</a>
+      <ul class="one">
+        <li><a href="#">是的</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#" class="more">关于我们</a>
+          <ul class="two">
+            <li><a href="#">完了</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#"  class="more">关于我们</a>
+              <ul class="hdw">
+                <li><a href="#">完了</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+              </ul>
+            </li>
+            <li><a href="#">关于我们</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">公告板</a></li>
+    <li><a href="#">组织机构</a></li>
+    <li>
+      <a href="#">关于我们</a>
+    
+      <ul class="one">
+          <li><a href="#">看看</a></li>
+          <li><a href="#">怎么样</a></li>
+          <li><a href="#">可以了</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
